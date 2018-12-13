@@ -26,7 +26,7 @@ public class PlayerDetector : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        enemyHealth = GetComponent<EnemyHealth>();
+        //enemyHealth = GetComponent<EnemyHealth>();
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         audioPlayer = GetComponent<AudioSource>();
@@ -42,12 +42,12 @@ public class PlayerDetector : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        if (enemyHealth.dead)
-        {
-            exclamation.SetActive(false);
-            caution.SetActive(false);
-            return;
-        }
+        //if (enemyHealth.dead)
+        //{
+        //    exclamation.SetActive(false);
+        //    caution.SetActive(false);
+        //    return;
+        //}
 
         playerPosition = player.transform.position;
         distanceFromPlayer = Vector3.Distance(transform.position, playerPosition);
