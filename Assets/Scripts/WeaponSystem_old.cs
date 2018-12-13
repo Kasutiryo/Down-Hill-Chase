@@ -45,6 +45,8 @@ public class WeaponSystem_old : MonoBehaviour {
         // Start be deactivating all weapons
         for (int i = 0; i < weaponPrefabs.Length; i++) { weaponPrefabs[i].SetActive(false); }
 
+        weaponIndex = index;
+
         // Make weapon visable if the weapon has been unlocked
         if (weaponPrefabs[index].GetComponent<Weapon_old>().unlocked) { weaponPrefabs[index].SetActive(true); }
     }

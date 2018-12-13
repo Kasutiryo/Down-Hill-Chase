@@ -36,6 +36,7 @@ public class Item : MonoBehaviour {
         Debug.Log(this.tag);
         if (this.tag == "MedKit")
         {
+            if(other.GetComponent<PlayerHealth>().currentHealth >= other.GetComponent<PlayerHealth>().startingHealth) { return; }
             player.clip = soundFX;
             player.Play();
             other.GetComponent<PlayerHealth>().RestoreHealth(healAmount);

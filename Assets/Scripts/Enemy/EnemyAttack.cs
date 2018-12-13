@@ -6,11 +6,13 @@ public class EnemyAttack : MonoBehaviour {
 
     public GameObject projectilePrefab;
     public GameObject projectileSpawn;
+    public AudioClip shot;
 
     GameObject M4_Armed;
     GameObject M4_Unarmed;
     Animator anim;
     EnemyHealth enemyHealth;
+    AudioSource audioPlayer;
 
     bool once = false;
     float shootingTimer;
@@ -20,6 +22,7 @@ public class EnemyAttack : MonoBehaviour {
 	void Start () {
         anim = GetComponent<Animator>();
         enemyHealth = GetComponent<EnemyHealth>();
+        audioPlayer = GetComponent<AudioSource>();
 
         M4_Unarmed = GameObject.FindGameObjectWithTag("M4 Unarmed");
         M4_Armed = GameObject.FindGameObjectWithTag("M4 Armed");
@@ -69,6 +72,8 @@ public class EnemyAttack : MonoBehaviour {
 
     void Fire()
     {
+        audioPlayer.clip = shot;
+        audioPlayer.Play();
         var projectile = (GameObject)Instantiate
                 (projectilePrefab,
                  projectileSpawn.transform.position,

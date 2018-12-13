@@ -17,6 +17,7 @@ public class Weapon_old : MonoBehaviour {
     public AudioClip shot;
     public GameObject projectilePrefab;
     public GameObject projectileSpawn;
+    public int damage = 10;
     Camera camera;
     float timer;
     AudioSource player;
@@ -60,8 +61,11 @@ public class Weapon_old : MonoBehaviour {
         EnemyHealth health = obj.GetComponent<EnemyHealth>();
         switch (obj.tag)
         {
-            case "Enemy":
-                health.TakeDamage(10);
+            case "Enemy One":
+                health.TakeDamage(damage);
+                break;
+            case "Enemy Two":
+                health.TakeDamage(damage);
                 break;
             default:
                 Debug.Log("Object has no tag or no action on this object is required");

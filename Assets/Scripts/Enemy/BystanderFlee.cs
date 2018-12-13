@@ -27,6 +27,7 @@ public class BystanderFlee : MonoBehaviour {
             {
                 //Make bystander run away
                 anim.SetBool("IsWalking", true);
+                agent.isStopped = false;
                 Vector3 dirToPlayer = transform.position - player.transform.position;
                 Vector3 newPosition = transform.position + dirToPlayer + new Vector3(100, 0, 0);
 

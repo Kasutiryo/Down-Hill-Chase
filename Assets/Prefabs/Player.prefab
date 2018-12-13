@@ -2965,7 +2965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
-  currentHealth: 50
+  currentHealth: 100
   healthSlider: {fileID: 114658604684315628}
   damageImage: {fileID: 114746275441123274}
   deathClip: {fileID: 8300000, guid: 2f07c3b7706a64f489133201c2342886, type: 3}
@@ -3023,6 +3023,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1098306392197470}
+  damage: 30
 --- !u!114 &114291564813709760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3132,6 +3133,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1098306392197470}
+  damage: 50
 --- !u!114 &114529297136521556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3210,6 +3212,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1098306392197470}
+  damage: 25
 --- !u!114 &114621300104913358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3228,6 +3231,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1098306392197470}
+  damage: 10
 --- !u!114 &114658604684315628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3389,6 +3393,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1098306392197470}
+  damage: 15
 --- !u!114 &114875333022026030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3435,13 +3440,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb46453417a4044ab59d0e4658897a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.1
+  timeBetweenShots: 0.08
   automatic: 1
   semi_automatic: 0
   shot: {fileID: 8300000, guid: 0a85cf0e96d7e2c4e8b0eaaece36b2e0, type: 3}
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1098306392197470}
+  damage: 5
 --- !u!114 &114960951909268648
 MonoBehaviour:
   m_ObjectHideFlags: 1

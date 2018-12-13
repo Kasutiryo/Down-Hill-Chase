@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 136782388972965508}
   m_Layer: 0
   m_Name: Enemy_One
-  m_TagString: Enemy
+  m_TagString: Enemy One
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2752,7 +2752,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1063577744522472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.44, y: 30.874998, z: 53.39}
+  m_LocalPosition: {x: 92.40317, y: 30.874998, z: 36.431515}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4296393320602962}
@@ -3456,7 +3456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c372791e686936a4585573af54b0e0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alert: {fileID: 8300000, guid: e99ff713f61ca2b41b56f7ef74577906, type: 3}
+  alert: {fileID: 8300000, guid: ae46e008ab88a1c41bbea86ae82a4d29, type: 3}
 --- !u!114 &114490297470753070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3471,6 +3471,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1953173143010218, guid: ca765c60a55587343ae9cee7dfcdadf1,
     type: 2}
   projectileSpawn: {fileID: 1161138008202216}
+  shot: {fileID: 8300000, guid: 2c71374916b02d241b02ea70809bca5a, type: 3}
 --- !u!114 &114532844617656156
 MonoBehaviour:
   m_ObjectHideFlags: 1

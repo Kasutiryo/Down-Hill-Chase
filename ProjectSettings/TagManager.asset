@@ -7,7 +7,6 @@ TagManager:
   - Triggerer
   - Grass
   - Stone
-  - Enemy
   - Team2
   - Ground
   - Heal Item
@@ -29,6 +28,10 @@ TagManager:
   - Caution
   - M4 Armed
   - M4 Unarmed
+  - Enemy Two
+  - Enemy One
+  - Enemy
+  - MainCanvas
   layers:
   - Default
   - TransparentFX

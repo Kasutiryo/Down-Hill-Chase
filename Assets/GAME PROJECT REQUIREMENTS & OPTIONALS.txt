@@ -1,0 +1,10 @@
+THING NOT IMPLEMENTED
+
+	- Bystander's run away function
+	- Obstacles do not react to player's forces
+	- Quit only works when the game is built to a .exe
+	- Game does not save
+	- There is no winning scene
+	- There is no intro scene
+	- There is no Audio Off/On
+	- There is no Help/Quit Buttons

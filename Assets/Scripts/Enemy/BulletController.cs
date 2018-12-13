@@ -26,9 +26,18 @@ public class BulletController : MonoBehaviour
             hitObject.GetComponent<PlayerHealth>().TakeDamage(10);
             Destroy(gameObject);
         }
-        if (hitObject.tag == "Enemy")
+        if (hitObject.tag == "Enemy One")
         {
-            hitObject.GetComponent<EnemyHealth>().TakeDamage(10);
+            WeaponSystem_old system = GameObject.FindGameObjectWithTag("WeaponSystem").GetComponent<WeaponSystem_old>();
+            int damage = system.weaponPrefabs[system.activeWeapon()].GetComponent<Weapon_old>().damage;
+            hitObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        if (hitObject.tag == "Enemy Two")
+        {
+            WeaponSystem_old system = GameObject.FindGameObjectWithTag("WeaponSystem").GetComponent<WeaponSystem_old>();
+            int damage = system.weaponPrefabs[system.activeWeapon()].GetComponent<Weapon_old>().damage;
+            hitObject.GetComponent<EnemyHealth>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }
