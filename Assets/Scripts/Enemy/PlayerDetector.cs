@@ -91,10 +91,22 @@ public class PlayerDetector : MonoBehaviour {
             caution.SetActive(true);
             agent.isStopped = true;
             anim.SetBool("IsWalking", false);
-            if (distanceFromPlayer <= 15f)
+            if (distanceFromPlayer <= 15f && tag != "Bystander")
             {
                 agent.isStopped = true;
                 transform.LookAt(new Vector3(playerPosition.x, playerPosition.y - 0.8f, playerPosition.z));
+                caution.SetActive(false);
+                exclamation.SetActive(true);
+                if (!alerted)
+                {
+                    alerted = true;
+                    audioPlayer.clip = alert;
+                    audioPlayer.Play();
+                }
+            }
+            else if (distanceFromPlayer <= 15f && tag == "Bystander")
+            {
+                agent.isStopped = false;
                 caution.SetActive(false);
                 exclamation.SetActive(true);
                 if (!alerted)

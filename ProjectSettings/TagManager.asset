@@ -32,6 +32,7 @@ TagManager:
   - Enemy One
   - Enemy
   - MainCanvas
+  - Bystander
   layers:
   - Default
   - TransparentFX

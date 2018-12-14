@@ -10,6 +10,7 @@ public class CPUMovement : MonoBehaviour {
     NavMeshAgent agent;
     Animator anim;
     EnemyHealth enemyHealth;
+    GameObject player;
 
     float thinkingPeriod = 5f;
     float timer;
@@ -20,6 +21,8 @@ public class CPUMovement : MonoBehaviour {
         enemyHealth = GetComponent<EnemyHealth>();
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
 
         agent.autoBraking = false;
 
@@ -76,7 +79,7 @@ public class CPUMovement : MonoBehaviour {
         return navHit.position;
     }
 
-    void InstantiateWayPoint(Vector3 destination)
+    public void InstantiateWayPoint(Vector3 destination)
     {
         var projectile = (GameObject)Instantiate
             (flag,
